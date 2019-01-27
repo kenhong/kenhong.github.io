@@ -18,6 +18,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/resources/icons/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Quicksand:400,700" rel="stylesheet">
   <style>
+    html {
+      visibility: hidden; 
+    }
+
     body {
       background-color: #ffffff;
     }
@@ -131,6 +135,11 @@
   </style>
 </head>
 <body>
+  <script>
+  $(document).ready(function() {
+    document.getElementsByTagName("html")[0].style.visibility = "visible";
+  });
+  </script>
   <div class="img-div">
     <div class="img-div2">
       <img class="img animate-opacity15" style="animation-delay:0.1s" src="/resources/megumin.png"/>
